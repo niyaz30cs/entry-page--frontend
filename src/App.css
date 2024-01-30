@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 400;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.userFormContainer {
+    background-color: teal;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+    margin: 10px auto 0px auto;
+    min-height: 100vh;
+    position: relative;
+    width: 60%;
+}
+
+.FormLinkContainer {
+    border-bottom: 1px solid #06051457;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 0.5em 1em;
+}
+
+.formLink {
+    border-radius: 10px;
+    text-decoration: none;
+    height: 100%;
+    width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+    transition: all 0.3s ease-in;
+}
+
+.FormLinkContainer .active {
+    background-color: yellow;
+    color: black;
+}
+
+.formBox {
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.432);
+    width: 400px;
+    height: 450px;
+    margin: 30px auto 0px auto;
+    animation: fadeIn 0.7s ease-in-out;
+    transition: all 0.7s ease-in;
+    opacity: 1;
+}
+
+.formBox form {
+    width: 100%;
+    height: fit-content;
+}
+
+.registerFormBox {
+    height: 580px;
+    width: 450px;
+    margin: 20px auto 0px auto;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.formBox--heading {
+    border-bottom: 2px solid #06051460;
+    padding: 0.5em;
+    text-align: center;
+    font-weight: 600;
+    color: yellow;
+}
+
+.inputBox {
+    width: 85%;
+    height: 75px;
+    position: relative;
+    margin: 20px auto 0px auto;
+}
+
+
+
+.inputFilelds {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 18px;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.inputFilelds::placeholder {
+    font-weight: 500;
+    color: yellow;
+    font-size: initial;
+}
+
+input[type="password"] {
+    padding-right: 2.5em;
+}
+
+.formBox--Buttons {
+    border: none;
+    outline: none;
+    display: block;
+    width: 200px;
+    margin: 10px auto 0px auto;
+    font-size: 18px;
+    padding: 0.4em;
+    background-color: yellow;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.formBox--Buttons:hover {
+    cursor: pointer;
+    background-color: green;
+    color: white;
+}
+
+.continueContainer {
+    margin: 20px 0px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.registrationResponseContainer {
+    position: absolute;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.419);
+    backdrop-filter: blur(5px);
+    z-index: 2;
+    top: 0;
+    left: 0px;
+}
+
+.responseContainer {
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+svg {
+    stroke-dasharray: 269.7405090332031px;
+    stroke-dashoffset: 0;
+    animation: heartBeat 1.2s ease-in-out infinite;
+    transform: rotate(-90deg);
+    width: 90px;
+}
+
+.responsebox {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.registrationMsg,
+.loginMsg {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+@keyframes heartBeat {
+    from {
+        stroke-dashoffset: 269.7405090332031px;
+    }
+
+    to {
+        stroke-dashoffset: -269.7405090332031px;
+    }
+}
+
+.responseContainerButton {
+    width: 200px;
+    padding: 0.5em;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: #388e3c;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+}
+
+.responseContainerButton:hover {
+    cursor: pointer;
+    background-color: #207724;
+    transform: scale(0.89);
+}
+
+.both
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+}
+.headerLink
+{
+    color: white;
+    font-weight: bolder;
+    font-size: 30px;
+    text-decoration: none;
+}
